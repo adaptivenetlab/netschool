@@ -75,25 +75,25 @@ sudo wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=
 
 ### Ekstrak File 
 ```bash
- tar -xvzf moodle.tgz
+sudo tar -xvzf moodle.tgz
  ```
 
 ### Ganti kepemilikan dan hak akses folder moodle
 
 ```bash
-chown -R www-data:www-data /var/www/html/moodle
+sudo chown -R www-data:www-data /var/www/html/moodle
 
-chmod -R 755 /var/www/html/moodle
+sudo chmod -R 755 /var/www/html/moodle
 ```
 
 ### Buat folder moodledata serta ganti kepemilikan dan hak akses folder moodledata
 
 ```bash
-mkdir /var/www/moodledata
+sudo mkdir /var/www/moodledata
 
-chmod -R 755 /var/www/moodledata/
+sudo chmod -R 755 /var/www/moodledata/
 
-chown -R www-data:www-data /var/www/moodledata
+sudo chown -R www-data:www-data /var/www/moodledata
 ```
 ---
 ## Akses web untuk instalasi moodle
